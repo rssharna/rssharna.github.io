@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hm{
+            color:red;
+            font-size: 50px;
+            text-align: center;
+            transition:margin-top 2s, margin-left 2s;
+        }
+        #hm:hover{
+            color:seagreen;
+            cursor: pointer;
+            margin-top: 45px;
+            margin-left: 45px;
+            
+        }
+        
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 0px auto;
+            background-color:tomato;
+            transition: margin-top 1s, background-color 1s;
+        }
+        .box:hover{
+            margin-top: 100px;
+            background-color:yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="hm">Hover me</h1>
+    <div class="box" onclick="clickme()"></div>
+
+    <script>
+        function clickme()
+        {
+           alert("hello world!");
+           //console.log("hello");
+           //document.write("hello");
+        }
+    </script>
+    
+</body>
+</html>
