@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        table tr th, input {
+           min-width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Result Table</h2>
+    <table border="1" id="table">
+       <tr>
+            <th> Degree </th>
+            <th> Institute </th>
+            <th> Grade </th>
+            <th> Passing Year </th>
+       </tr>
+     
+    </table>
+    
+    <button onclick="addRow();">+</button>
+
+<script>
+    var table = document.getElementById("table");
+
+    function addRow() {
+    
+        var rowString =
+            '<td><input type="text"></td>' +
+            '<td><input type="text"></td>' +
+            '<td><input type="text"></td>' +
+            '<td><input type="text"></td>';
+
+        var newRow = table.insertRow();
+        newRow.innerHTML = rowString;
+    }
+</script>
+
+</body>
+        
+</html>
