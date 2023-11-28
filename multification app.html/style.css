@@ -9,10 +9,10 @@ body{
     font-family: cursive;
 }
 
-.form{
+.form {
     background-color: white;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0,3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.3);
     border-radius: 10px;
     margin: 10px;
 }
@@ -30,24 +30,26 @@ body{
 .input::placeholder{
     color: lightgrey;
     font-family: cursive;
-}.btn{
+}
+.btn{
     background-color: green;
     color: white;
     border: none;
     display: block;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
     font-family: cursive;
     margin: 20px 0;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0,3) ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0,0.3) ;
     cursor: pointer;
 }
 
 .btn:hover{
     filter: brightness(0.9);
-}.score{
+}
+.score{
     color: green;
     text-align: right;
 }
